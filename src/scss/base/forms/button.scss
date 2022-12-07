@@ -3,10 +3,18 @@
 
 .button {
 	display: inline-flex;
-	padding: 0px 0px;
+ background-color: $btnColor;
+ color: $primaryColor;
+ line-height: math.div(26, 16);
+ padding: rem(12) rem(35);
+ border: rem(1) solid transparent;
+ transition: all 0.5s;
 	@media (any-hover: hover) {
 		&:hover {
-		}
+   color: $btnColor;
+   background-color: $primaryColor;
+   border-color: $btnColor;
+  }
 	}
 	&._fw {
 		width: 100%;

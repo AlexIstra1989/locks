@@ -1,9 +1,210 @@
 //====================================================================================================
-
+.header {
+ // .header__top
+ &__top {
+  background-color: $mainColor;
+  padding: rem(9);
+  .menu-open & {
+   display: none;
+  }
+ }
+ // .header__top-box
+ &__top-box {
+  display: flex;
+  justify-content: center;
+  max-width: rem(1240);
+  width: 100%;
+  color: $primaryColor;
+  margin: 0 auto;
+  line-height: math.div(26, 16);
+ }
+ // .header__top-promo
+ &__top-promo {
+  @include adaptiveValue("font-size", 16, 12);
+  margin-left: auto;
+  @media (max-width: $mobile) {
+   margin: 0 auto;
+  }
+ }
+ // .header__top-callback
+ &__top-callback {
+  margin-left: auto;
+  border-bottom: rem(1) solid $primaryColor;
+  @media (max-width: $mobile) {
+   display: none;
+  }
+ }
+ // .header__inner
+ &__inner {
+  display: flex;
+  align-items: center;
+  padding: rem(29) 0;
+ }
+}
 //====================================================================================================
-
+.menu {
+ // .menu__body
+ &__body {
+  @media (max-width: $tablet) {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: -100%;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   overflow: auto;
+   background-color: $primaryColor;
+   padding: rem(40) rem(15) rem(50) rem(15) ;
+   z-index: 4;
+   transition: top 0.8s;
+   .menu-open & {
+    top: 0;
+   }
+  }
+ }
+}
+//========================================================================================================
+.header-bottom {
+ display: flex;
+ align-items: center;
+ @include adaptiveValue("gap", 100, 10);
+ // .header-bottom__logo
+ &__logo {
+  @media (max-width: $mobile) {
+   display: block;
+   margin-bottom: rem(40);
+   text-align: center;
+  }
+ }
+ // .header-bottom__list
+ &__list {
+  display: flex;
+  @include adaptiveValue("gap", 32, 15);
+  @media (max-width: $mobile) {
+   flex-direction: column;
+   //gap: rem(32);
+   margin-bottom: rem(32);
+  }
+ }
+ // .header-bottom__item 
+ &__item {
+  @media (max-width: $mobile) {
+   border-bottom: rem(1) solid #EAEAEA;
+   padding: rem(16) 0;
+  }
+ }
+ // .header-bottom__link
+ &__link {
+  font-size: rem(20);
+  line-height: math.div(23, 20);
+  border-bottom: rem(1) solid transparent;
+  transition: all 0.5s;
+  &:hover {
+   border-color: $mainColor;
+  }
+  &_catalog {
+   position: relative;
+   padding-right: rem(21);
+   display: none;
+   &::after {
+    @include pseudo;
+    @include background(url("../img/icons/arrow-down.svg"));
+    right: 0;
+    top: 55%;
+    transform: translateY(-40%) rotate(-90deg);
+    width: rem(20);
+    height: rem(8);
+    background-size: contain;
+   }
+   @media (max-width: $mobile) {
+    display: inline-block;
+   }
+  }
+  @media (max-width: $mobile) {
+   font-size: rem(28);
+  }
+ }
+ // .header-bottom__popup
+ &__popup {
+  padding-right: rem(21);
+  position: relative;
+  &::after {
+   @include pseudo;
+   @include background(url("../img/icons/arrow-down.svg"));
+   width: rem(9);
+   height: rem(5);
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   @media (max-width: 900px) {
+    transform: translateY(-50%) rotate(-90deg);
+    width: rem(20);
+    height: rem(8);
+    background-size: contain;
+   }
+  }
+  @media (max-width: $mobile) {
+   display: none;
+  }
+ }
+}
+//=================================================================
+.header-info {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ // .header-info__phone
+ &__phone {
+  @include adaptiveValue("margin-right", 60, 10);
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background(url("../img/icons/phone.svg"));
+   width: rem(20);
+   height: rem(20);
+   left: rem(-30);
+   top: 0;
+   @media (max-width: $mobile) {
+    top: 50%;
+    left: rem(5);
+    transform: translateY(-50%);
+   }
+  }
+  @media (max-width: 900px) {
+   display: none;
+  }
+  @media (max-width: $mobile) {
+   display: block;
+   font-size: rem(28);
+   margin-right: 0;
+   padding-left: rem(35);
+  }
+ }
+ // .header-info__heart
+ &__heart {
+  @include adaptiveValue("margin-right", 30, 10);
+  z-index: 11;
+  transition: all 0.8s;
+  &:hover {
+   path {
+    stroke: red;
+   }
+  }
+ }
+ // .header-info__cart
+ &__cart {
+  z-index: 11;
+  transition: all 0.8s;
+  &:hover {
+   path {
+    stroke: $btnColor;
+   }
+  }
+ }
+}
+//====================================================================================================
 //Burger
-/*
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
@@ -51,4 +252,3 @@
 		}
 	}
 }
-*/

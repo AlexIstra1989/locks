@@ -30,7 +30,7 @@ flsFunctions.isWebp();
 /* Добавление loaded для HTML после полной загрузки страницы */
 // flsFunctions.addLoadedClass();
 /* Модуль для работы с меню (Бургер) */
-// flsFunctions.menuInit();
+flsFunctions.menuInit();
 /* Учет плавающей панели на мобильных устройствах при 100vh */
 // flsFunctions.fullVHfix();
 
@@ -60,7 +60,7 @@ flsFunctions.isWebp();
 Документация: https://template.fls.guru/template-docs/funkcional-popup.html
 Сниппет (HTML): pl
 */
-// import './libs/popup.js'
+import './libs/popup.js'
 
 /*
 Модуль параллакса мышью
@@ -86,7 +86,7 @@ import * as flsForms from "./files/forms/forms.js";
 // flsForms.formQuantity();
 
 /* Модуль звездного рейтинга */
-// flsForms.formRating();
+flsForms.formRating();
 
 /* Модуль работы с select. */
 // import './libs/select.js'
@@ -127,7 +127,7 @@ import * as flsForms from "./files/forms/forms.js";
 Документация плагина: https://swiperjs.com/
 Сниппет(HTML): swiper
 */
-// import "./files/sliders.js";
+import "./files/sliders.js";
 
 // ========================================================================================================================================================================================================================================================
 // Модули работы с прокруткой страницы ========================================================================================================================================================================================================================================================
@@ -157,7 +157,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавная навигация по странице
 // Документация: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
-// flsScroll.pageNavigation();
+flsScroll.pageNavigation();
 
 // Функционал добавления классов к хедеру при прокрутке
 // Документация: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
@@ -182,7 +182,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 /* Динамический адаптив */
 // Документация: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
-// import "./libs/dynamic_adapt.js";
+import "./libs/dynamic_adapt.js";
 
 /* Форматирование чисел */
 // import './libs/wNumb.min.js';
