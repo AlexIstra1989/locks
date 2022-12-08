@@ -1,3 +1,168 @@
 //====================================================================================================
-
+.main-block {
+ // .main-block__inner
+ &__inner {
+  @include background(url("../img/main-block/bg.png"));
+  background-position: center;
+  height: rem(770);
+  display: flex;
+  align-items: center;
+  @media (max-width: 1070px) {
+   @include background(url("../img/main-block/bg-mob.png"));
+   background-size: contain;
+   padding-top: 33%;
+   height: auto;
+  }
+  @media (max-width: $mobile) {
+   height: rem(605);
+   padding-top: 40%;
+  }
+  @media (max-width: $mobileSmall) {
+   padding-top: 60%;
+  }
+ }
+ // .main-block__content
+ &__content {
+  max-width: rem(585);
+  width: 100%; 
+  margin-left: auto;
+  @include adaptiveValue("padding-right", 100, 5 );
+  @media (max-width: 1070px) {
+   padding: 0 rem(15);
+   margin: 0 auto;
+  }
+ }
+ // .main-block__title
+ &__title {
+  margin-bottom: rem(20);
+ }
+ // .main-block__text
+ &__text {
+  max-width: rem(290);
+  width: 100%;
+  font-size: rem(14);
+  line-height: math.div(24, 14);
+  p:first-child {
+   margin-bottom: rem(16);
+  }
+  @media (max-width: 1070px) {
+   max-width: 100%;
+  }
+  @media (max-width: $mobile) {
+   display: none;
+  }
+ }
+ // .main-block__price
+ &__price {
+  max-width: rem(290);
+  width: 100%;
+ }
+ // .main-block__price-name
+ &__price-name {
+  font-size: rem(12);
+  line-height: math.div(22, 12);
+  margin-bottom: rem(4);
+ }
+ // .main-block__prices
+ &__prices {
+  @include adaptiveValue("font-size", 24, 18);
+  line-height: math.div(28, 24);
+  display: flex;
+  gap: rem(12);
+  margin-bottom: rem(17);
+ }
+ // .main-block__new
+ &__new {
+  font-weight: 700;
+ }
+ // .main-block__old
+ &__old {
+  font-weight: 300;
+  color: #A4A4A4;
+  position: relative;
+  &::before {
+   @include pseudo;
+   width: 100%;
+   height: rem(1.5);
+   background-color: #A4A4A4;
+   top: 55%;
+  }
+ }
+ // .main-block__button
+ &__button {
+  @media (max-width: $mobileSmall) {
+   width: 100%;
+   justify-content: center;
+  }
+ }
+ .swiper-pagination {
+  display: flex;
+  gap: rem(25);
+  justify-content: center;
+  align-items: center;
+  margin-top: rem(-35);
+  @media (max-width: 1070px) {
+   margin-top: rem(20);
+  }
+  @media (max-width: $mobile) {
+   margin-top: rem(-20);
+  }
+ }  
+ .swiper-pagination-bullet {
+  width: rem(6);
+  height: rem(6);
+  background-color: $bulletColor;
+  border-radius: 50%;
+  cursor: pointer;
+ }
+ .swiper-pagination-bullet-active {
+  width: rem(24);
+  height: rem(24);
+  padding: rem(8);
+  border: rem(1) solid $bulletColor;
+  background-color: $primaryColor;
+  position: relative; 
+  &::before {
+   @include pseudo;
+   background-color: $btnColor;
+   width: rem(8);
+   height: rem(8);
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 50%;
+  }
+ }
+ .swiper-buttons {
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  bottom: rem(25);
+  left: 50%;
+  cursor: pointer;
+  background-color: red;
+ }
+ .swiper-button-prev,
+ .swiper-button-next {
+  //position: relative; 
+  &::before {
+   @include pseudo;
+   @include background(url("../img/icons/arrow-slider.svg"));
+   width: rem(11);
+   height: rem(21);
+   left: rem(-90);
+   top: 0;
+   @media (max-width: $mobileSmall) {
+    left: -44%;
+   }
+  }
+ } 
+ .swiper-button-next::before {
+  transform: rotate(180deg);
+  left: rem(80);
+  @media (max-width: $mobileSmall) {
+   left: 43%;
+  }
+ } 
+}
 //====================================================================================================

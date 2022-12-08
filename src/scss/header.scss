@@ -1,5 +1,6 @@
 //====================================================================================================
 .header {
+ border-bottom: rem(1) solid $mainColor;
  // .header__top
  &__top {
   background-color: $mainColor;
@@ -38,7 +39,8 @@
  &__inner {
   display: flex;
   align-items: center;
-  padding: rem(29) 0;
+  @include adaptiveValue("padding-top", 29, 23);
+  @include adaptiveValue("padding-bottom", 29, 23);
  }
 }
 //====================================================================================================
