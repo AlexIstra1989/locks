@@ -166,3 +166,90 @@
  } 
 }
 //====================================================================================================
+.stats {
+@include adaptiveValue("padding-top", 90, 40);
+// .stats__inner
+&__inner {
+ background-color: #F2F8FF;
+}
+// .stats__items
+&__items {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ @include adaptiveValue("padding-top", 40, 40);
+ @include adaptiveValue("padding-bottom", 40, 20);
+ @include adaptiveValue("gap", 80, 5);
+ justify-items: center;
+ }
+ // .stats__item
+ &__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ // .stats__num
+ &__num {
+  font-weight: 700;
+  @include adaptiveValue("font-size", 32, 24);
+  line-height: math.div(38, 32);
+  margin-bottom: rem(16);
+ }
+ // .stats__name
+ &__name {
+  font-weight: 600;
+  text-align: center;
+ }
+}
+//=============================================================================================================
+.benefits {
+ @include adaptiveValue("padding-top", 100, 40);
+ text-align: center;
+ // .benefits__container
+ &__container {
+ }
+ // .benefits__title
+ &__title {
+  @include adaptiveValue("margin-bottom", 50, 24);
+ }
+ // .benefits__items
+ &__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: rem(30);
+ }
+ // .benefits__item
+ &__item {
+  @include adaptiveValue("padding-top", 140, 100);
+  padding-bottom: rem(24);
+  padding-left: rem(24);
+  padding-right: rem(24);
+  border-left: rem(1) solid #C4CDD5;
+  border-right: rem(1) solid #C4CDD5;
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background(url("../img/benefits/image-1.svg"));
+   @include adaptiveValue("width", 82, 64);
+   @include adaptiveValue("height", 82, 64);
+   left: 50%;
+   top: 15%;
+   transform: translateX(-50%);
+  }
+  &_logo::before {
+   @include background(url("../img/benefits/image-2.svg"));
+  }
+  @media (max-width: 600px) {
+   border-right: none;
+   border-left: none;
+   border-top: rem(1) solid #C4CDD5;
+   border-bottom: rem(1) solid #C4CDD5;
+  }
+ }
+ // .benefits__text
+ &__text {
+  font-weight: 600;
+  @include adaptiveValue("font-size", 20, 16);
+  line-height: math.div(32, 20);
+ }
+}
+//===============================================================================================================
