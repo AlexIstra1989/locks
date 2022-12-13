@@ -32,7 +32,7 @@ function initSliders() {
 		new Swiper('.main-block__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Pagination, Autoplay],
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -47,11 +47,11 @@ function initSliders() {
 			//lazy: true,
 
 			// Эффекты
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
+			// effect: 'fade',
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
 
 			// Пагинация
 			pagination: {
@@ -106,7 +106,7 @@ function initSliders() {
 		new Swiper('.popular__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Pagination],
+			modules: [Navigation],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 4,
