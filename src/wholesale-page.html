@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Оптовая продажа"
+})
+
+<body>
+ <div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page">
+   <section class="application">
+    <div class="application__container">
+     <div class="application__inner">
+      <div class="application__box">
+       <h1 class="application__title title">Оформите заявку и мы вам перезвоним</h1>
+       <p class="application__text">Оставьте заявку и наши специалисты перезвонять Вам в ближайшее время</p>
+      </div>
+      <form class="application__form" action="#">
+       <h4 class="application__form-title">Оформление заявки</h4>
+       <div class="application__fields">
+        <label for="#" class="application__name">
+         Имя
+         <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="application__field">
+        </label>
+        <label for="#" class="application__name">
+         Название компании
+         <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя Вашей компании" class="application__field">
+        </label>
+        <label for="#" class="application__name">
+         Номер телефона
+         <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 (_ _ _) _ _  _ _  _ _ _" class="application__field">
+        </label>
+       </div>
+       <div class="application__fields">
+        <label for="#" class="application__name application__name_product">
+         Название товара
+         <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите название или артикул товара" class="application__field">
+        </label>
+        <label for="#" class="application__name">
+         Количество
+         <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Количество товара" class="application__field">
+        </label>
+       </div>
+       <div class="application__checkbox checkbox">
+        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Нанесение персонального логотипа (бесплатно)</span></label>
+       </div>
+       <div class="application__checkbox checkbox">
+        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Помощь в монтажных работах (бесплатно)</span></label>
+       </div>
+       <button class="application__button button">Отправить заявку</button>
+      </form>
+     </div>
+    </div>
+   </section>
+   <section class="stages">
+    <div class="stages__container">
+     <h2 class="stages__title title">Как мы работаем</h2>
+     <div class="stages__items">
+      <div class="stages__item">
+       <img class="stages__image" src="img/wholesale-page/stages/wholesale.jpg" alt="#">
+       <div class="stages__descr">
+        <h4 class="stages__name">Оформление заявки</h4>
+        <p class="stages__text">Вы оставляете заявку на сайте или связываетесь с нами по указанному на сайте номеру телефона</p>
+       </div>
+      </div>
+      <div class="stages__item stages__item_second">
+       <img class="stages__image" src="img/wholesale-page/stages/reconciliation.jpg" alt="#">
+       <div class="stages__descr">
+        <h4 class="stages__name">Согласование</h4>
+        <p class="stages__text">Мы консультируем Вас, согласовываем стоимость и точное время приезда нашего специалиста</p>
+       </div>
+      </div>
+      <div class="stages__item stages__item_third">
+       <img class="stages__image" src="img/wholesale-page/stages/sending.jpg" alt="#">
+       <div class="stages__descr">
+        <h4 class="stages__name">Отправка товара и установка</h4>
+        <p class="stages__text">Наш специалист по монтажу замков выезжает к Вам в точно зазначеное время по согласованному адресу</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="choice">
+    <div class="choice__container">
+     <h2 class="choice__title title">Почему стоит выбрать нас</h2>
+     <div class="choice__inner">
+      <img class="choice__image" src="img/wholesale-page/choice/main-image.jpg" alt="#">
+      <div class="choice__items">
+       <div class="choice__item choice__item_return">
+        <h4 class="choice__name">Возврат удвоенной стоимости</h4>
+        <p class="choice__text">За каждый отправленый товар который окажеться бракованным, мы вернем вам двойную стоимость.</p>
+       </div>
+       <div class="choice__item choice__item_mounting">
+        <h4 class="choice__name">Монтаж</h4>
+        <p class="choice__text">Проводим монтажные работы любой сложности и в любое удобное для Вас время</p>
+       </div>
+       <div class="choice__item choice__item_brend">
+        <h4 class="choice__name">Брендирование продукта</h4>
+        <p class="choice__text">Мы нанесем Ваш логотип любой сложности на свою продукцию, чтобы прибавить ей эксклюзивности </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="projects">
+    <div class="projects__container">
+     <h2 class="projects__title title">Наши крупные проекты</h2>
+     <div class="projects__slider swiper">
+      <div class="projects__wrapper swiper-wrapper">
+       <div class="projects__slide swiper-slide">
+        <div class="projects__item">
+         <img class="projects__image" src="img/wholesale-page/projects/radisson.png" alt="radisson">
+         <div class="projects__info">
+          <img class="projects__logo" src="img/wholesale-page/projects/radisson-logo.svg" alt="логотип">
+          <h4 class="projects__name">Проект для гостинницы Radisson Hotels</h4>
+          <ul class="projects__list">
+           <li class="projects__list-item">Установлено 123 Вариативных замка Golden Soft для отеля</li>
+           <li class="projects__list-item">Было нанесено личный брендинг на все замки</li>
+           <li class="projects__list-item">Были проведны монтажные работы, также была произведена помощь в подключении замков к системе</li>
+          </ul>
+          <p class="projects__budget">Бюджет - <span>$5000</span></p> 
+         </div>
+        </div>
+       </div>
+       <div class="projects__slide swiper-slide">
+        <div class="projects__item">
+         <img class="projects__image" src="img/wholesale-page/projects/radisson.png" alt="radisson">
+         <div class="projects__info">
+          <img class="projects__logo" src="img/wholesale-page/projects/radisson-logo.svg" alt="логотип">
+          <h4 class="projects__name">Проект для гостинницы Radisson Hotels</h4>
+          <ul class="projects__list">
+           <li class="projects__list-item">Установлено 123 Вариативных замка Golden Soft для отеля</li>
+           <li class="projects__list-item">Было нанесено личный брендинг на все замки</li>
+           <li class="projects__list-item">Были проведны монтажные работы, также была произведена помощь в пкделючении замков к системе</li>
+          </ul>
+          <p class="projects__budget">Бюджет - <span>$5000</span></p> 
+         </div>
+        </div>
+       </div>
+       <div class="projects__slide swiper-slide">
+        <div class="projects__item">
+         <img class="projects__image" src="img/wholesale-page/projects/radisson.png" alt="radisson">
+         <div class="projects__info">
+          <img class="projects__logo" src="img/wholesale-page/projects/radisson-logo.svg" alt="логотип">
+          <h4 class="projects__name">Проект для гостинницы Radisson Hotels</h4>
+          <ul class="projects__list">
+           <li class="projects__list-item">Установлено 123 Вариативных замка Golden Soft для отеля</li>
+           <li class="projects__list-item">Было нанесено личный брендинг на все замки</li>
+           <li class="projects__list-item">Были проведны монтажные работы, также была произведена помощь в пкделючении замков к системе</li>
+          </ul>
+          <p class="projects__budget">Бюджет - <span>$5000</span></p> 
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-buttons">
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="questions">
+    <div class="questions__container">
+     <h2 class="questions__title title">Остались вопросы?</h2>
+     <p class="questions__text">Если у вас возникли какие-то вопросы по поводу оптовых заказов, заполните форму и мы Вам перезвоним.</p>
+     <form class="questions__form" action="#">
+      <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="questions__input input">
+      <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш Email" class="questions__input input">
+      <button class="questions__button button" type="submit">Отправить</button>
+     </form>
+    </div>
+   </section>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,150 +1,271 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Верстка «NEW_PROJECT_NAME»</title>
-	</head>
-	<body>
-		<div class="rootpage">
-			<h1>Верстка «NEW_PROJECT_NAME»</h1>
-			<div class="rootpage__info">
-				Особенности проекта
-			</div>
-			<h2>Готовые страницы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Главная</a></li>
-			</ol>
-			<h2>Попапы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html#"></a></li>
-			</ol>
-			<div class="rootpage__tnx">
-				<h2>Спасибо за заказ!</h2>
-				<p>Буду рад (а) хорошему отзыву.</p>
-				<p>Обращайтесь еще!</p>
-			</div>
-			<div class="rootpage__contacts">
-				<h2>Мои контакты:</h2>
-				<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-				<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
-			</div>
-		</div>
-	</body>
-	<style>
-		@charset "UTF-8";
-		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-		* ,*::before, *::after {
-			padding: 0px;
-			margin: 0px;
-			border: 0px;
-			box-sizing: border-box; 
-		}
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			min-width: 320px;
-			width: 100%;
-			color: #fff;
-			background-color: #5e5373;
-		}
-		body {
-			font-family: Montserrat;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 1rem;
-		}
-		a {
-			text-decoration: underline;
-			color: #ebe691
-		}
-		a:visited {
-			text-decoration: underline;
-			color: #aaa768;
-		}
-			a:hover {
-			text-decoration: none;
-		}
-		ul li {
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		.wrapper {
-			width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
-		.rootpage{
-			padding: 30px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media (max-width: 767px) {
-			.rootpage{
-				padding:30px 15px;
-			}
-		}
-		h1 {
-			color: #ebe691;
-			font-size: 2.5rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-		@media (max-width: 767px) {
-			h1 {
-				font-size: 1.85rem;
-				margin: 0px 0px 1.25rem 0px;
-			}
-		}
-		h2 {
-			color: #ebe691;
-			font-size: 1.25rem;
-			margin: 0px 0px 1rem 0px;
-		}
-		@media (max-width: 767px) {
-			 h2 {
-				font-size: 1.125rem;
-				margin: 0px 0px 1rem 0px;
-			}
-		}
-		.rootpage__info{
-			line-height: 140%;
-			margin: 0px 0px 1.5rem 0px;
-		}
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
 
-		.rootpage__list{
-			margin: 0px 0px 2.25rem 1.25rem;
-		}
-		.rootpage__list li:not(:last-child){
-			margin: 0px 0px 15px 0px;
-		}
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius: 200px;
-			padding: 20px 65px;
-			line-height: 140%;
-		}
-		@media (max-width: 767px){
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius:40px;
-			padding: 20px;
-		}
-		}
-		.rootpage__contacts{
-			background: #32b5a4;
-			
-		}
-		.rootpage__contacts a{
-			color: #ebe691;
-		}
-		.rootpage__tnx{
-			background: #c22d63;
-			margin: 0px 0px 1rem 0px;
-		}
-	</style>
+<body>
+ <div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page">
+   <section class="main-block">
+    <div class="main-block__container">
+     <div class="main-block__slider swiper">
+      <div class="main-block__wrapper swiper-wrapper">
+       <div class="main-block__slide swiper-slide">
+        <div class="main-block__inner">
+         <div class="main-block__content">
+          <h1 class="main-block__title title">Golden Soft <br> GS-200Z-5 для офиса</h1>
+          <div class="main-block__text">
+           <p>Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый блеск, четкие линии, красивые
+            формы.</p>
+           <p>Подходит для установки на деревянную/межкомнатную дверь.</p>
+          </div>
+          <div class="main-block__price">
+           <span class="main-block__price-name">Цена</span>
+           <ul class="main-block__prices">
+            <li class="main-block__new">33 000₽</li>
+            <li class="main-block__old">37 000₽</li>
+           </ul>
+          </div>
+          <button class="main-block__button button">Добавить в корзину</button>
+         </div>
+        </div>
+       </div>
+       <div class="main-block__slide swiper-slide">
+        <div class="main-block__inner">
+         <div class="main-block__content">
+          <h1 class="main-block__title title">Golden Soft <br> GS-200Z-5 для офиса</h1>
+          <div class="main-block__text">
+           <p>Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый блеск, четкие линии, красивые
+            формы.</p>
+           <p>Подходит для установки на деревянную/межкомнатную дверь.</p>
+          </div>
+          <div class="main-block__price">
+           <span class="main-block__price-name">Цена</span>
+           <ul class="main-block__prices">
+            <li class="main-block__new">33 000₽</li>
+            <li class="main-block__old">37 000₽</li>
+           </ul>
+          </div>
+          <button class="main-block__button button">Добавить в корзину</button>
+         </div>
+        </div>
+       </div>
+       <div class="main-block__slide swiper-slide">
+        <div class="main-block__inner">
+         <div class="main-block__content">
+          <h1 class="main-block__title title">Golden Soft <br> GS-200Z-5 для офиса</h1>
+          <div class="main-block__text">
+           <p>Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый блеск, четкие линии, красивые
+            формы.</p>
+           <p>Подходит для установки на деревянную/межкомнатную дверь.</p>
+          </div>
+          <div class="main-block__price">
+           <span class="main-block__price-name">Цена</span>
+           <ul class="main-block__prices">
+            <li class="main-block__new">33 000₽</li>
+            <li class="main-block__old">37 000₽</li>
+           </ul>
+          </div>
+          <button class="main-block__button button">Добавить в корзину</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-buttons">
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="stats">
+    <div class="stats__inner">
+     <div class="stats__container">
+      <div class="stats__items">
+       <div class="stats__item">
+        <span class="stats__num">5,567</span>
+        <p class="stats__name">Счастливых клиентов</p>
+       </div>
+       <div class="stats__item">
+        <span class="stats__num">1245</span>
+        <p class="stats__name">Продуктов на выбор</p>
+       </div>
+       <div class="stats__item">
+        <span class="stats__num">372</span>
+        <p class="stats__name">Продаж в день</p>
+       </div>
+       <div class="stats__item">
+        <span class="stats__num">20</span>
+        <p class="stats__name">Лет на рынке</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <section class="benefits">
+    <div class="benefits__container">
+     <h2 class="benefits__title title">Почему GoldenService? </h2>
+     <div class="benefits__items">
+      <div class="benefits__item">
+       <p class="benefits__text">Возврат удвоенной стоимости каждого замка в случае брака.</p>
+      </div>
+      <div class="benefits__item benefits__item_logo">
+       <p class="benefits__text">Наносим ваш логотип компании на наш продукт</p>
+      </div>
+      <div class="benefits__item">
+       <p class="benefits__text">Возврат удвоенной стоимости каждого замка в случае брака.</p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="category">
+    <div class="category__container">
+     <h2 class="category__title title">Категории</h2>
+      <div class="category__items">
+       <div class="category__item category__item_hotel">
+        <h5 class="category__name">Для отелей</h5>
+        <a class="category__link" href="#">Перейти</a>
+       </div>
+       <div class="category__item category__item_lockers">
+        <h5 class="category__name">Для шкафчиков</h5>
+        <a class="category__link" href="#">Перейти</a>
+       </div>
+       <div class="category__item category__item_office">
+        <h5 class="category__name">Для офисов</h5>
+        <a class="category__link" href="#">Перейти</a>
+       </div>
+       <div class="category__item category__item_home">
+        <h5 class="category__name">Замки для дома</h5>
+        <a class="category__link" href="#">Перейти</a>
+       </div>
+      </div>
+      <a class="category__all button" href="#">Все категории</a>
+    </div>
+   </section>
+   <section class="popular">
+    <div class="popular__container">
+     <h2 class="popular__title title">Наши популярные продукты</h2>
+     <div class="popular__slider swiper">
+      <div class="popular__wrapper swiper-wrapper">
+       <div class="popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_hotels">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">33 000₽</li>
+           <li class="popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_hotels-2">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">7 000₽</li>
+           <li class="popular__price-old">8 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_office">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">33 000₽</li>
+           <li class="popular__price-old">39 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_office-2">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">9 000₽</li>
+           <li class="popular__price-old">12 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_hotels">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">33 000₽</li>
+           <li class="popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_hotels-2">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">33 000₽</li>
+           <li class="popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+      </div>
+      <div class="swiper-buttons">
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="callback">
+    <div class="callback__wrapper">
+     <div class="callback__container">
+      <h2 class="callback__title title">Мы Вам перезвоним</h2>
+      <p class="callback__text">Если у вас возникли какие-то вопросы или проблемы, заполните форму и мы Вам перезвоним.</p>
+      <form class="callback__form" action="#">
+       <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="callback__input input">
+       <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш Email" class="callback__input input">
+       <button class="callback__button button" type="submit">Отправить</button>
+      </form>
+     </div>
+    </div>
+   </section>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+</body>
+
 </html>
