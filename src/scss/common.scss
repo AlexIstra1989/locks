@@ -2,10 +2,41 @@
 body {
  line-height: math.div(26, 16);
 }
-
+//=====================================================================================
 .title {
  @include adaptiveValue("font-size", 44, 22);
  line-height: math.div(62, 44);
  font-weight: 600;
  color: $darkColor;
+}
+//==================================================================================
+.breadcrumbs {
+ // .breadcrumbs__list
+ &__list {
+  display: flex;
+  gap: rem(15);
+  padding: rem(20) 0;
+ }
+ // .breadcrumbs__link
+ &__link {
+  @include adaptiveValue("font-size", 16, 14);
+  &_main {
+   font-weight: 600;
+   position: relative;
+   @media (max-width: $mobile) {
+    &::before {
+     @include pseudo;
+     @include background(url("../img/icons/home.svg"));
+     width: rem(20);
+     height: rem(20);
+     left: 0;
+     top: rem(-15);
+    }
+   }
+   @media (max-width: $mobile) {
+    font-size: 0;
+    padding-left: rem(10);
+   }
+  }
+ }
 }
