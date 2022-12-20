@@ -40,3 +40,13 @@ body {
   }
  }
 }
+
+.subtitle {
+ display: inline-block;
+ @include adaptiveValue("font-size", 18, 14);
+ line-height: math.div(38, 18);
+ letter-spacing: 0.09em;
+ color: $btnColor;
+ border-bottom: rem(2) solid $btnColor;
+ margin-bottom: rem(16);
+}

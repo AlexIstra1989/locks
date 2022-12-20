@@ -173,9 +173,15 @@
 }
 //====================================================================================================
 .stats {
+ &_about-page {
+  color: $primaryColor;
+ }
 // .stats__inner
 &__inner {
  background-color: #F2F8FF;
+ &_about-page {
+  background-color: $footerBg;
+ }
 }
 // .stats__items
 &__items {
