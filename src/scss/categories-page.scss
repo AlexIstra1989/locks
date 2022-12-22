@@ -1,0 +1,38 @@
+.categories {
+ @include adaptiveValue("padding-top", 20, 10);
+ @include adaptiveValue("padding-bottom", 100, 40);
+ text-align: center;
+ // .categories__title
+ &__title {
+  @include adaptiveValue("margin-bottom", 64, 24);
+ }
+ // .categories__items
+ &__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  @include adaptiveValue("column-gap", 27, 20);
+  @include adaptiveValue("row-gap", 50, 24);
+  @include adaptiveValue("margin-bottom", 50, 32);
+  @media (max-width: $mobile) {
+   grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  }
+ }
+ // .categories__item
+ &__item {
+  cursor: pointer;
+  border: rem(1) solid transparent;
+  transition: all 0.7s;
+  &:hover {
+   border-color: $btnColor;
+  }
+ }
+ // .categories__image
+ &__image {
+  @include adaptiveValue("margin-bottom", 16, 12);
+  width: 100%;
+ }
+ // .categories__name
+ &__name {
+  @include adaptiveValue("font-size", 16, 14);
+ }
+}
