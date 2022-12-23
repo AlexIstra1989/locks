@@ -39,7 +39,7 @@ flsFunctions.menuInit();
 Документация: https://template.fls.guru/template-docs/modul-spojlery.html
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -89,7 +89,7 @@ import * as flsForms from "./files/forms/forms.js";
 flsForms.formRating();
 
 /* Модуль работы с select. */
-// import './libs/select.js'
+import './libs/select.js'
 
 /* (В работе) Модуль работы с масками.*/
 /*
@@ -107,7 +107,7 @@ flsForms.formRating();
 Документация плагина: https://refreshless.com/nouislider/
 Сниппет (HTML): range
 */
-// import "./files/forms/range.js";
+import "./files/forms/range.js";
 
 /* Модуль работы с подсказками (tippy) */
 /*

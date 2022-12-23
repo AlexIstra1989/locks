@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Каталог"
+})
+
+<body>
+ <div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page">
+   <div class="breadcrumbs">
+    <div class="breadcrumbs__container">
+     <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link breadcrumbs__link_main" href="http://www.yan1989.ru/locks/index.html">Главная</a>
+      </li>
+      /
+      <li class="breadcrumbs__item">
+       <span class="breadcrumbs__current" href="#">Каталог</span>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="catalog">
+    <div class="catalog__container">
+     <div class="catalog__control">
+      <button class="catalog__filters-reset" type="button">Сбросить фильтры</button>
+      <select class="catalog__control-sel" name="form[]">
+       <option value="1" selected>По пулярности</option>
+       <option value="2">По цене</option>
+       <option value="3">По материалу</option>
+       <option value="4">По размеру</option>
+      </select>
+     </div>
+     <div class="catalog__body">
+      <div data-spollers="992" class="catalog__filter filter">
+       <div class="filter__item">
+        <button class="filter__title" type="button" data-spoller>Фильтр</button>
+        <div class="filter__body">
+         <div data-spollers class="filter-price price-filter">
+          <div class="price-filter__item">
+           <button class="price-filter__title" type="button" data-spoller>Цена</button>
+           <div data-range class="price-filter__body">
+            <div class="price-filter__inputs">
+             <input data-range-from="0" class="price-filter__input" type="text" value="1000" autocomplete="off"
+              name="form[]">
+             <input data-range-to="5000" class="price-filter__input" type="text" value="24500" autocomplete="off"
+              name="form[]">
+            </div>
+            <div data-range-item class="price-filter__range"></div>
+           </div>
+          </div>
+         </div>
+         <div data-spollers class="filter__item">
+          <div class="filter__content">
+           <button class="filter__item-title" type="button" data-spoller>Особенности</button>
+           <div class="filter__body">
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_1" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_1">
+              <span class="checkbox__text">Электронные кодовые замки <small>(65)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_2">
+              <span class="checkbox__text">Биометрические замки<small>(15)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_3">
+              <span class="checkbox__text">Замок с отппечатком<small>(35)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_4" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_4">
+              <span class="checkbox__text">Замок с бесконтактной картой<small>(23)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_5" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_5">
+              <span class="checkbox__text">Программируемые замки<small>(12)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_6" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_6">
+              <span class="checkbox__text">Замки с удаленным доступом<small>(3)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_7" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_7">
+              <span class="checkbox__text">Bluetooth замки<small>(6)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_8" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_8">
+              <span class="checkbox__text">Электронные кодовые замки <small>(65)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_9" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_9">
+              <span class="checkbox__text">Электронные замки для квартиры<small>(44)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_10" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_10">
+              <span class="checkbox__text">Замки для стеклянных дверей<small>(19)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_11" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_11">
+              <span class="checkbox__text">Электронные цилиндры<small>(3)</small></span>
+             </label>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div data-spollers class="filter__item">
+          <div class="filter__content">
+           <button class="filter__item-title" type="button" data-spoller>Цвет</button>
+           <div class="filter__body">
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_12" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_12">
+              <span class="checkbox__text">Черный</span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input checkbox__input_gold " id="c_13" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label checkbox__label_gold" for="c_13">
+              <span class="checkbox__text">Золотой</span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input checkbox__input_silver" id="c_14" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label checkbox__label_silver" for="c_14">
+              <span class="checkbox__text">Серебряный</span>
+             </label>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div data-spollers class="filter__item">
+          <div class="filter__content">
+           <button class="filter__item-title" type="button" data-spoller>Материал</button>
+           <div class="filter__body">
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_15" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_15">
+              <span class="checkbox__text">Нержавеющая сталь <small>(33)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_16" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_16">
+              <span class="checkbox__text">Латунь <small>(29)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_17" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_17">
+              <span class="checkbox__text">Оцинкованная сталь <small>(13)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_18" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_18">
+              <span class="checkbox__text">Сталь <small>(59)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_19" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_19">
+              <span class="checkbox__text">Железо <small>(9)</small></span>
+             </label>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div data-spollers class="filter__item">
+          <div class="filter__content">
+           <button class="filter__item-title" type="button" data-spoller>Размеры</button>
+           <div class="filter__body">
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_20" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_20">
+              <span class="checkbox__text">от 78 (мм) до 165 (мм) <small>(46)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_21" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_21">
+              <span class="checkbox__text">от 48 (мм) до 85 (мм) <small>(32)</small></span>
+             </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+             <input class="checkbox__input" id="c_21" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <label class="checkbox__label" for="c_21">
+              <span class="checkbox__text">от 12 (мм) до 22 (мм) <small>(19)</small></span>
+             </label>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="catalog__content">
+       <div class="catalog__items">
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_hotels">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_hotels-2">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name  popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_office">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">39 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item  popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_office-2">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">39 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_hotels">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_hotels-2">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name  popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_office">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">39 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item  popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_office-2">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">39 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_hotels">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_hotels-2">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name  popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_office">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">39 000₽</li>
+          </ul>
+         </div>
+        </a>
+        <a class="catalog__item  popular__item">
+         <div class="catalog__item-top popular__item-top popular__item-top_office-2">
+          <span class="catalog__status popular__status">В наличии </span>
+          <span class="catalog__present popular__present">Подарок</span>
+         </div>
+         <div class="catalog__info popular__info">
+          <div class="catalog__score">
+           <div class="catalog__rating rating rating_set">
+            <div class="rating__body">
+             <div class="rating__active"></div>
+             <div class="rating__items">
+              <input type="radio" class="rating__item" value="1" name="rating">
+              <input type="radio" class="rating__item" value="2" name="rating">
+              <input type="radio" class="rating__item" value="3" name="rating">
+              <input type="radio" class="rating__item" value="4" name="rating">
+              <input type="radio" class="rating__item" value="5" name="rating">
+             </div>
+            </div>
+            <div class="rating__value">3.6</div>
+           </div>
+           <span class="catalog__reviews">(12) отзывов</span>
+          </div>
+          <h5 class="catalog__name popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="catalog__prices popular__prices">
+           <li class="catalog__price-new popular__price-new">33 000₽</li>
+           <li class="catalog__price-old popular__price-old">39 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+         @@include('html/_pagging.htm',{})
+      </div>
+     </div>
+    </div>
+   </div>
+   <section class="viewed">
+    <div class="viewed__container">
+     <h2 class="viewed__title title">Вы недавно просмотрели</h2>
+     <div class="viewed__slider swiper">
+      <div class="viewed__wrapper swiper-wrapper">
+       <div class="viewed__slide popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_hotels">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">33 000₽</li>
+           <li class="popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="viewed__slide popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_hotels-2">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">7 000₽</li>
+           <li class="popular__price-old">8 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="viewed__slide popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_office">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">33 000₽</li>
+           <li class="popular__price-old">39 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="viewed__slide popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_office-2">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для офиса</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">9 000₽</li>
+           <li class="popular__price-old">12 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="viewed__slide popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_hotels">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">33 000₽</li>
+           <li class="popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+       <div class="viewed__slide popular__slide swiper-slide">
+        <a class="popular__item">
+         <div class="popular__item-top popular__item-top_hotels-2">
+          <span class="popular__status">В наличии </span>
+          <span class="popular__present">Подарок</span>
+         </div>
+         <div class="popular__info">
+          <h5 class="popular__name">Дверной Замок Golden Soft для отеля</h5>
+          <ul class="popular__prices">
+           <li class="popular__price-new">33 000₽</li>
+           <li class="popular__price-old">37 000₽</li>
+          </ul>
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="callback">
+    <div class="callback__wrapper">
+     <div class="callback__container">
+      <h2 class="callback__title title">Мы Вам перезвоним</h2>
+      <p class="callback__text">Если у вас возникли какие-то вопросы или проблемы, заполните форму и мы Вам перезвоним.</p>
+      <form class="callback__form" action="#">
+       <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="callback__input input">
+       <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш Email" class="callback__input input">
+       <button class="callback__button button" type="submit">Отправить</button>
+      </form>
+     </div>
+    </div>
+   </section>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+</body>
+
+</html>

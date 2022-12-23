@@ -364,13 +364,17 @@
    background-repeat: no-repeat;
    background-position: center;
    background-color: rgba(247, 247, 247, 1);
-   &_hotels,
-   &_hotels-2 {
+   &_hotels {
     background-image: url("../img/popular/lock-hotels.jpg");
    }
-   &_office,
-   &_office-2 {
+   &_hotels-2 {
+    background-image: url("../img/popular/lock-hotels-2.jpg");
+   }
+   &_office {
     background-image: url("../img/popular/lock-office.jpg");
+   }
+   &_office-2 {
+    background-image: url("../img/popular/lock-office-2.jpg");
    }
   }
  // .popular__status
