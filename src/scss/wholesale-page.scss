@@ -98,14 +98,6 @@
   }
  }
 }
-//==============================================================================================
-.checkbox {
- // .checkbox__label
- &__label {
-  @include adaptiveValue("font-size", 16, 12);
-  @include adaptiveValue("padding-left", 12, 6);
- }
-}
 //================================================================================================
 .stages {
  @include adaptiveValue("padding-top", 100, 40);

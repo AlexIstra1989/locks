@@ -26,7 +26,7 @@
      <div class="catalog__control">
       <button class="catalog__filters-reset" type="button">Сбросить фильтры</button>
       <select class="catalog__control-sel" name="form[]">
-       <option value="1" selected>По пулярности</option>
+       <option value="1" selected>По популярности</option>
        <option value="2">По цене</option>
        <option value="3">По материалу</option>
        <option value="4">По размеру</option>
@@ -34,10 +34,12 @@
      </div>
      <div class="catalog__body">
       <div data-spollers="992" class="catalog__filter filter">
-       <div class="filter__item">
-        <button class="filter__title" type="button" data-spoller>Фильтр</button>
+       <div class="filter__inner">
+        <div data-spoller class="filter__title-box">
+         <button class="filter__title" type="button" >Фильтр</button>
+        </div>
         <div class="filter__body">
-         <div data-spollers class="filter-price price-filter">
+         <div data-spollers class="filter__price price-filter">
           <div class="price-filter__item">
            <button class="price-filter__title" type="button" data-spoller>Цена</button>
            <div data-range class="price-filter__body">
@@ -64,37 +66,37 @@
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_2">
-              <span class="checkbox__text">Биометрические замки<small>(15)</small></span>
+              <span class="checkbox__text">Биометрические замки <small>(15)</small></span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_3">
-              <span class="checkbox__text">Замок с отппечатком<small>(35)</small></span>
+              <span class="checkbox__text">Замок с отппечатком <small>(35)</small></span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_4" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_4">
-              <span class="checkbox__text">Замок с бесконтактной картой<small>(23)</small></span>
+              <span class="checkbox__text">Замок с бесконтактной картой <small>(23)</small></span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_5" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_5">
-              <span class="checkbox__text">Программируемые замки<small>(12)</small></span>
+              <span class="checkbox__text">Программируемые замки <small>(12)</small></span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_6" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_6">
-              <span class="checkbox__text">Замки с удаленным доступом<small>(3)</small></span>
+              <span class="checkbox__text">Замки с удаленным доступом <small>(3)</small></span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_7" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_7">
-              <span class="checkbox__text">Bluetooth замки<small>(6)</small></span>
+              <span class="checkbox__text">Bluetooth замки <small>(6)</small></span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
@@ -106,19 +108,19 @@
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_9" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_9">
-              <span class="checkbox__text">Электронные замки для квартиры<small>(44)</small></span>
+              <span class="checkbox__text">Электронные замки для квартиры <small>(44)</small></span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_10" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_10">
-              <span class="checkbox__text">Замки для стеклянных дверей<small>(19)</small></span>
+              <span class="checkbox__text">Замки для стеклянных дверей <small>(19)</small></span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input" id="c_11" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_11">
-              <span class="checkbox__text">Электронные цилиндры<small>(3)</small></span>
+              <span class="checkbox__text">Электронные цилиндры <small>(3)</small></span>
              </label>
             </div>
            </div>
@@ -129,20 +131,20 @@
            <button class="filter__item-title" type="button" data-spoller>Цвет</button>
            <div class="filter__body">
             <div class="filter__checkbox checkbox">
-             <input class="checkbox__input" id="c_12" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+             <input class="checkbox__input checkbox__input_black" id="c_12" data-error="Ошибка" type="checkbox" value="1" name="form[]">
              <label class="checkbox__label" for="c_12">
               <span class="checkbox__text">Черный</span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input checkbox__input_gold " id="c_13" data-error="Ошибка" type="checkbox" value="1" name="form[]">
-             <label class="checkbox__label checkbox__label_gold" for="c_13">
+             <label class="checkbox__label" for="c_13">
               <span class="checkbox__text">Золотой</span>
              </label>
             </div>
             <div class="filter__checkbox checkbox">
              <input class="checkbox__input checkbox__input_silver" id="c_14" data-error="Ошибка" type="checkbox" value="1" name="form[]">
-             <label class="checkbox__label checkbox__label_silver" for="c_14">
+             <label class="checkbox__label" for="c_14">
               <span class="checkbox__text">Серебряный</span>
              </label>
             </div>
@@ -565,7 +567,7 @@
          </div>
         </a>
        </div>
-         @@include('html/_pagging.htm',{})
+        @@include('html/_pagging.htm',{})
       </div>
      </div>
     </div>
@@ -665,6 +667,10 @@
          </div>
         </a>
        </div>
+      </div>
+      <div class="swiper-buttons">
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
       </div>
      </div>
     </div>
