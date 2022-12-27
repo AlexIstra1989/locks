@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+.images-product-mini {
+ // .images-product-mini__slider
+ &__slider {
+ }
+ // .images-product-mini__wrapper
+ &__wrapper {
+ }
+ // .images-product-mini__slide
+ &__slide {
+ }
+ // .images-product-mini__image
+ &__image {
+  position: relative;
+  max-width: rem(140);
+  height: rem(130);
+  padding: 0 0 30% 0;
+  cursor: pointer;
+  img {
+   object-fit: cover;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+  }
+ }
+}

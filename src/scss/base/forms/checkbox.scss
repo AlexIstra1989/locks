@@ -13,7 +13,7 @@
 			box-shadow: 0 0 5px $btnColor;
 		}
 		&:checked + .checkbox__label:before {
-			background-image: url("../../../img/icons/check.svg");
+			background-image: url("../img/icons/check.svg");
 		}
 	}
 	// .checkbox__label
