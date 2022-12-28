@@ -14,6 +14,9 @@
 		}
 		&:checked + .checkbox__label:before {
 			background-image: url("../img/icons/check.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 		}
 	}
 	// .checkbox__label
