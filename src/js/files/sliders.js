@@ -342,14 +342,14 @@ function initSliders() {
 			spaceBetween: 0,
 			autoHeight: false,
 			speed: 800,
-   watchSlidesVisibility: true, 
-   watchOverflow: true,
-   slidesPerGroup: 1,
-   centeredSlides: false,
+   // watchSlidesVisibility: true, 
+   // watchOverflow: true,
+   // slidesPerGroup: 1,
+   // centeredSlides: false,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			//loop: false,
 			//preloadImages: false,
 			//lazy: true,
 
@@ -360,10 +360,10 @@ function initSliders() {
 			// 	disableOnInteraction: false,
 			// },
 
-   zoom: {
-    maxRatio: 4, 
-    minRatio: 1,
-   },
+   // zoom: {
+   //  maxRatio: 4, 
+   //  minRatio: 1,
+   // },
 
    thumbs: {
     swiper: {
@@ -394,26 +394,28 @@ function initSliders() {
 
 			// Брейкпоинты
 
-   // breakpoints: {
-			// 	320: {
-			// 		slidesPerView: 1,
-			// 		spaceBetween: 0,
-			// 		autoHeight: true,
-			// 	},
-   //  500: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 20,
-			// 		autoHeight: true,
-			// 	},
-			// 	700: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 30,
-			// 	},
-			// 	900: {
-			// 		slidesPerView: 4,
-			// 		spaceBetween: 30,
-			// 	},
-			// },
+   breakpoints: {
+    320: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+				},
+				500: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+    730: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				900: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+				},
+    992: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+				},
+			},
    
 			// События
 			on: {
@@ -421,6 +423,7 @@ function initSliders() {
 			}
 		});
 	}
+
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

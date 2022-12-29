@@ -19,7 +19,7 @@ body {
  }
  // .breadcrumbs__link
  &__link {
-  @include adaptiveValue("font-size", 16, 14);
+  @include adaptiveValue("font-size", 16, 11);
   &_main {
    font-weight: 600;
    position: relative;
@@ -38,6 +38,10 @@ body {
     padding-left: rem(10);
    }
   }
+ }
+ // .breadcrumbs__current 
+ &__current {
+  @include adaptiveValue("font-size", 16, 11);
  }
 }
 

@@ -49,3 +49,48 @@
 		</div>
 	</div>
 </div> 
+
+
+<div id="popup-form" aria-hidden="true" class="reviews-popup popup">
+	<div class="reviews-popup__wrapper popup__wrapper">
+		<div class="reviews-popup__content popup__content">
+   <div class="reviews-popup__top">
+    <h5 class="reviews-popup__title">Оставить отзыв</h5>
+    <button data-close type="button" class="reviews-popup__close"><span></span></button>
+   </div>
+			<div class="popup__inner">
+    <form class="reviews-popup__form" action="#">
+     <span class="reviews-popup__grade reviews__grade">Ваша оценка</span>
+     <div class="reviews__rating rating rating_set">
+      <div class="rating__body">
+       <div class="rating__active"></div>
+       <div class="rating__items">
+        <input type="radio" class="rating__item" value="1" name="rating">
+        <input type="radio" class="rating__item" value="2" name="rating">
+        <input type="radio" class="rating__item" value="3" name="rating">
+        <input type="radio" class="rating__item" value="4" name="rating">
+        <input type="radio" class="rating__item" value="5" name="rating">
+       </div>
+      </div>
+      <div class="rating__value">0</div>
+     </div>
+     <div class="reviews__fields">
+      <label for="#" class="reviews__name">
+       Ваше имя
+       <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите Ваше имя" class="reviews__input">
+      </label>
+      <label for="#" class="reviews__name">
+       Ваш Email
+       <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите Ваш Email" class="reviews__input">
+      </label>
+      <label for="#" class="reviews__name">
+       Ваш комментарий
+       <textarea class="reviews__entry">Введите Ваш комментарий</textarea>
+      </label>
+     </div>
+     <a class="reviews__button button" type="submit">Оставить отзыв</a>
+    </form>
+   </div>
+		</div>
+	</div>
+</div> 
